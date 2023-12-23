@@ -1,0 +1,5 @@
+coverage
+node_modules
+dist
+*.config.js
+*-env.d.ts
