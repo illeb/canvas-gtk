@@ -2,6 +2,7 @@ import './style.css';
 import typescriptLogo from './typescript.svg';
 import viteLogo from '/vite.svg';
 import {setupCounter} from './counter.ts';
+import {setupRender} from './renderer/renderer.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -15,6 +16,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
+    <canvas id="renderer"></canvas>
     <p class="read-the-docs">
       Click on the Vite and TypeScript logos to learn more
     </p>
@@ -22,3 +24,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `;
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!);
+setupRender(document.querySelector<HTMLCanvasElement>('#renderer')!);
