@@ -1,3 +1,3 @@
-import { CanvasGTKEngine } from '../src/main'
+import { CanvasGTKEngine } from '..'
 
 new CanvasGTKEngine('app')
