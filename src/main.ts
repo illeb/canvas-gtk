@@ -1,5 +1,5 @@
-import {CanvasGTKEngine} from './CanvasGTKEngine.ts';
+import {CanvasGtkEngine} from './CanvasGtkEngine.ts';
 
 export {
-	CanvasGTKEngine,
+	CanvasGtkEngine,
 };

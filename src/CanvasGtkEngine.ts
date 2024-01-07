@@ -2,7 +2,7 @@ import {BaseRenderer} from './Controller/BaseRenderer.ts';
 
 export class HostElementNotFoundException extends Error {}
 
-export class CanvasGTKEngine {
+export class CanvasGtkEngine {
 	baseRenderer: BaseRenderer;
 	constructor(hostId: string) {
 		this.baseRenderer = new BaseRenderer();

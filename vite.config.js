@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
     build: {
@@ -10,5 +11,5 @@ export default defineConfig({
             fileName: 'canvas-gtk',
         },
     },
-    plugins: [, dts()],
+    plugins: [eslint(), dts()],
 });
