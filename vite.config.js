@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
-import eslint from 'vite-plugin-eslint';
 import dts from 'vite-plugin-dts';
 import { resolve } from 'path';
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
     build: {

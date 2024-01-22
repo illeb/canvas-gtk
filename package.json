@@ -14,6 +14,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "dev:example": "tsc && vite build && vite serve example",
     "lint": "eslint --ext .js,.ts .",
     "lint:fix": "eslint --ext .js,.ts . --fix",
     "preview": "vite preview"
