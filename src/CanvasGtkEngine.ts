@@ -1,13 +1,15 @@
 import {BaseRenderer} from './Controller/BaseRenderer.ts';
 
-export class HostElementNotFoundException extends Error {}
+export class HostElementNotFoundException extends Error {
+}
 
 export class CanvasGtkEngine {
 	baseRenderer: BaseRenderer;
+
 	constructor(hostId: string) {
 		this.baseRenderer = new BaseRenderer();
 
-		const hostElement = document.querySelector<HTMLButtonElement>(`#${hostId}`);
+		const hostElement = document.querySelector<HTMLElement>(`#${hostId}`);
 		if (!hostElement) {
 			throw new HostElementNotFoundException();
 		}
