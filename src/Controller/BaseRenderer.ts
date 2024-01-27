@@ -21,6 +21,6 @@ export class BaseRenderer {
 			this.canvas.style.cssText = config.style;
 		}
 
-		setupRender(this.canvas);
+		void setupRender(this.canvas);
 	}
 }
